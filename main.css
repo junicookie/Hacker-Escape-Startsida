@@ -148,7 +148,7 @@ body {
     border-color: transparent;
     color: white;
     font-weight: 600;
-    padding: 10px 35px;
+    padding: 10px 40px;
 
     @media only screen and (max-width: 768px) {
     text-decoration-line: underline;
@@ -170,13 +170,12 @@ body {
     border-color: transparent;
     color: #011827;
     font-weight: 600;
-    padding: 10px 35px;
+    padding: 10px 40px;
 
     @media only screen and (max-width: 768px) {
     display: flex;   
     position: static;
     margin-top: 0px;
-    padding: 10px 40px;
 }}
 
 .quote-section {
@@ -344,11 +343,11 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 3px;
-    padding: 10px 35px;
+    padding: 10px 40px;
     
     @media only screen and (max-width: 990px) {   
     font-size: 0.9rem;
-    padding: 10px 20px;
+    padding: 10px 25px;
 }}
 
 .main__button-section {
@@ -493,9 +492,12 @@ body {
 }}
 
 .white-space {
-    height: 100px;
+    height: 150px;
     width: 100px;
-}
+
+    @media only screen and (max-width: 768px) {
+    height: 100px;
+}}
 
 .footer {
     background-color: #011827;
