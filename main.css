@@ -8,11 +8,12 @@ body {
     width: 90%;
     max-width: 1400px;
     margin: 0 auto;
+    padding: 10px 0px 0px 0px;
 
     @media only screen and (max-width: 1300px) {
     width: 100%;
+    padding: 10px 0px 10px 0px;
 }}
-
 
 .header-logo {
     height: clamp(70px, 10vw, 70px);
@@ -21,7 +22,7 @@ body {
     justify-content: center;
 
     @media only screen and (max-width: 768px) {
-    height: clamp(10px, 20vw, 80px);
+    height: 4rem;
     width: auto;
 }}
 
@@ -31,8 +32,10 @@ body {
     align-items: center;
     flex: 1;
     margin: 0;   
-    padding-inline-start: 20px;
-}
+
+    @media only screen and (max-width: 768px) {
+    padding: 3px 10px;
+}}
 
 .header__title li, h1 {
     font-family: "Roboto", sans-serif;
@@ -41,13 +44,13 @@ body {
     position: relative;
     top: 15px;
     margin: 0;
-    padding: 5px;
+    padding: 10px;
 }
     @media only screen and (max-width: 768px) {
     .header li, .header h1 {
 
     max-width: 120px;
-    font-size: clamp(20px, 3vw, 20px);
+    font-size: 1rem;
     overflow-wrap: break-word;
     position: static;
     text-align: left;
@@ -75,7 +78,6 @@ body {
     @media only screen and (max-width: 768px) {
     display: none;
     overflow: hidden;
-    padding: 0px;
 }}
 
 .navmenu :link {
@@ -115,7 +117,7 @@ body {
     object-position: center;
 
     @media only screen and (max-width: 768px) {
-    height: clamp(100px, 40vw, 400px);
+    height: clamp(200px, 40vw, 400px);
 }}
 
 .banner__button-section {
@@ -150,7 +152,7 @@ body {
 
     @media only screen and (max-width: 768px) {
     text-decoration-line: underline;
-    font-size: 1rem;
+    font-size: 0.9rem;
     display: flex;   
     position: static;
     margin-top: 0px;
@@ -158,6 +160,7 @@ body {
     color: #36769D;
     border-radius: 0px;
 }}
+
 
 .on-site-challenge-btn {
     font-family: "Roboto", sans-serif; 
@@ -170,7 +173,6 @@ body {
     padding: 10px 35px;
 
     @media only screen and (max-width: 768px) {
-    font-size: 1.5rem;   
     display: flex;   
     position: static;
     margin-top: 0px;
@@ -185,18 +187,13 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding: 60px 80px;
-
-    @media only screen and (max-width: 1300px) {
-    padding: 80px 30px;
-}
-
-    @media only screen and (max-width: 990px) {
-    padding: 20px 20px;
-}
+    padding: 80px 60px 60px 60px;
 
     @media only screen and (max-width: 768px) {
-    padding: 20px 60px;
+    padding: 1rem;
+}
+    @media only screen and (max-width: 360px) {
+    padding: 10px 10px;  
 }}
 
 .quote-first {
@@ -231,7 +228,7 @@ body {
     padding: 10px;
 
     @media only screen and (max-width: 1300px) {
-     font-size: 1.2rem;
+     font-size: 1rem;
 }}
 
 .quote-attribute {
@@ -251,12 +248,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 80px;
+    padding: 40px 50px;
 
-    @media only screen and (max-width:  990px) {
+    @media only screen and (max-width: 990px) {
     font-size: 1.8rem;
     padding: 40px 10px;
 
+}
+    @media only screen and (max-width: 360px) {
+    font-size: 1.4rem;
+    padding: 25px 10px;
+    text-align: center;
 }}
 
 .challenge-section {
@@ -275,7 +277,8 @@ body {
     scroll-snap-type: x mandatory;
     justify-content: flex-start;
     scroll-snap-align: start;
-    padding: 40px 40px;
+    gap: 15px;
+    padding: 20px 15px;
 }}
 
 .challenge-card-img {
@@ -284,22 +287,32 @@ body {
     object-fit: cover;
     object-position: center;
     border-radius: 10px 10px 0px 0px;
+
+    @media only screen and (max-width: 1300px) {   
+    height: 150px;
 }
+    @media only screen and (max-width: 990px) {
+    height: 160px;
+}}
 
 .challenge-card-body {
     font-family: "Roboto", sans-serif; 
-    padding: 25px;
-}
+    padding: 10px 25px 25px 25px;
 
-.challenge-card-1, .challenge-card-2, .challenge-card-3{
+    @media only screen and (max-width: 990px) {
+    padding: 10px 15px 20px;
+}}
+
+.challenge-card-1, .challenge-card-2, .challenge-card-3 {
     max-width: 350px;
     border-radius: 8px;
+    gap: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 
-    @media only screen and (max-width: 990px) {   
-    display: flex;
-    gap: 4vw;
-    flex: 0 0 100%;
+    @media only screen and (max-width: 768px) {   
+    flex: 0 0 280px;
+    width: 280px;
+    min-width: 0;    
 }}
 
 .challenge-card-title {
@@ -311,8 +324,8 @@ body {
     @media only screen and (max-width: 1300px) {
     font-size: 1.3rem;   
 }
-    @media only screen and (max-width: 990px) {
-    font-size: 1.6rem;   
+    @media only screen and (max-width: 990px) {   
+    font-size: 1.2rem;
 }}
 
 .challenge-card-rating {
@@ -329,7 +342,11 @@ body {
     text-decoration: none;
     border-radius: 3px;
     padding: 10px 35px;
-}
+    
+    @media only screen and (max-width: 990px) {   
+    font-size: 0.9rem;
+    padding: 10px 20px;
+}}
 
 .main__button-section {
     display: flex;
@@ -348,7 +365,6 @@ body {
     gap: 10px;
 }}
 
-
 .story-section {
     background-color: #011827;
     display: flex;
@@ -360,6 +376,11 @@ body {
 
     @media only screen and (max-width: 990px) {
     padding: 100px 100px;
+}
+    @media only screen and (max-width: 768px) {
+    font-size: 0.9rem;
+    gap: 20px;
+    padding: 50px 50px;
 }}
 
 .story-text {
@@ -393,7 +414,6 @@ body {
 
     @media only screen and (max-width: 768px) {
     flex-direction: column;
-    gap: 10px;
 }}
 
 .play-section--reversed {
@@ -409,7 +429,6 @@ body {
 
     @media only screen and (max-width: 768px) {
     flex-direction: column;
-    gap: 10px;
 }}
 
 .play-text {
@@ -425,7 +444,7 @@ body {
 }
     @media only screen and (max-width: 768px) {
     width: 100%;
-    padding: 50px;
+    padding: 30px 20px;
 }}
 
 .play-text h3 {
@@ -467,7 +486,7 @@ body {
     padding: 10px 35px;
 
     @media only screen and (max-width: 768px) {
-    font-size: clamp(15px, 1.5vw, 35px);
+    font-size: clamp(13px, 1.5vw, 35px);
 }}
 
 .white-space {
@@ -496,8 +515,11 @@ body {
     @media only screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 60px 80px;
     gap: 10px;
+}
+    @media only screen and (max-width: 360px) {
+    padding: 20px;
 }}
 
 .footer :link {
@@ -511,7 +533,11 @@ body {
     font-weight: 500;
     font-size: 15px;
     line-height: 1.65;
-}
+
+    @media only screen and (max-width:768px) {
+    font-size: 14px;
+    line-height: 1.75;
+}}
 
 .footer-info {
     font-family: "Roboto", sans-serif; 
@@ -520,23 +546,30 @@ body {
     max-width: 40%;
 
     @media only screen and (max-width:768px) {
-     max-width: 100%;
-     padding: 20px 0px;
+    max-width: 100%;
+    padding: 20px 0px;
+    font-size: 13px;
 }}
 
 .footer-sitemap ul {
     font-family: "Roboto", sans-serif; 
     list-style: none;
-    font-size: 14px;
+    font-size: 11px;
     list-style: none;
     margin: 0;
     padding: 0;
-}
+
+    @media only screen and (max-width:768px) {
+    font-size: 13px;
+}}
 
 .footer-socials ul {
     font-family: "Roboto", sans-serif; 
-    font-size: 14px;
+    font-size: 11px;
     list-style: none;
     margin: 0;
     padding: 0;
-}
+
+    @media only screen and (max-width:768px) {
+    font-size: 13px;
+}}
